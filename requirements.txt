@@ -14,20 +14,12 @@ Flask-Login==0.5.0
 Flask-SQLAlchemy==2.4.3
 Flask-WTF==0.14.3
 idna==2.10
-ipykernel @ file:///C:/ci/ipykernel_1596208728219/work/dist/ipykernel-5.3.4-py3-none-any.whl
-ipython @ file:///C:/ci/ipython_1596868620883/work
-ipython-genutils==0.2.0
 isort==4.3.21
 itsdangerous==1.1.0
-jedi @ file:///C:/ci/jedi_1596472767194/work
 Jinja2==2.11.2
-jupyter-client @ file:///tmp/build/80754af9/jupyter_client_1594826976318/work
-jupyter-core==4.6.3
-lazy-object-proxy==1.4.3
 MarkupSafe==1.1.1
 mccabe==0.6.1
 parso==0.7.0
-pickleshare @ file:///C:/ci/pickleshare_1594374056827/work
 prompt-toolkit==3.0.5
 pycparser==2.20
 Pygments==2.6.1
@@ -41,7 +33,6 @@ toml==0.10.1
 tornado==6.0.4
 traitlets==4.3.3
 typed-ast==1.4.1
-wcwidth @ file:///tmp/build/80754af9/wcwidth_1593447189090/work
 Werkzeug==1.0.1
 wincertstore==0.2
 wrapt==1.12.1
