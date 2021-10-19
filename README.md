@@ -18,7 +18,7 @@ Under The GNU
 
 * Separated requirements files
 
-* SQLite by default if no env variable is set
+* SQLite by default
 
 # Usage
 
@@ -48,3 +48,7 @@ If you don't have django installed for python 3 then run:
 And then:
 
     $ python manage.py runserver
+    
+###Images
+
+![alt text](http://url/to/img.png)
