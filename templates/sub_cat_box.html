@@ -1,0 +1,32 @@
+<section id="popularjobcategory">
+    <div class="content">
+        <div class="container jobsearchcontainer">
+            <div class="container maintitle">
+                <div class="col-xs-12">
+                    <p class="popularjobtext">Choose <span class="manin-color">Sub-Category </span></p>
+                </div>
+            </div>
+            <div class="container mainjobsearchform">
+                <div class="row">
+                    {% for subcat in subcat %}
+                    <div class="col-md-3 jobcat">
+                        <div class="category-item">
+                            <a href="category/{{subcat.to_url}}">
+                                <span class="icon">
+
+                                    <img src="{{subcat.image.url}}" alt="">
+                                    
+                                </span>
+                                <h4 class="title">
+                                    {{subcat.subCategoryName}} 
+                                </h4>
+
+                            </a>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

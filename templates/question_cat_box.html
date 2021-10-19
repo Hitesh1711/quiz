@@ -1,0 +1,112 @@
+{% load mathjax %}
+{% mathjax_scripts %}
+
+<div class="page-wrapper" style="background-color: #f5f5f5;">
+    <div class="page-body">
+        <div class="qwe">
+            <ul class="breadcrumb">
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+        {% for ques in questions %}
+            <div style="visibility: hidden; overflow: hidden; position: absolute; top: 0px; height: 1px; width: auto; padding: 0px; border: 0px; margin: 0px; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal;">
+                <div id="MathJax_Hidden"><br><br><br><br><br><br></div>
+            </div>
+            <div id="MathJax_Message" style="display: none;"></div>
+            <div id="wrap" class="grid_1200">
+                <section class="container main-content margin-bottom-15">
+                    <div class="row">
+                        <div class="col-md-12" style="height: auto !important; min-height: 0px !important;">
+                            <article class="question single-question question-type-normal">
+                                <div class="row">
+                                    <div class="col-xs-12" id="save_alert_1" style="display:none;">
+                                    </div>
+                                </div>
+                                <h2>
+                                    <div style="width: 30px;float: left;">
+                                   {{ forloop.counter}} .</div>
+                                   <div class="question-main">{{ ques.question|safe }}</div>
+                                </h2> <br>
+                                {% for option in ques.options %}
+                                {% if forloop.counter|stringformat:"i" == ques.answer %}
+                                    <div class="wrap">
+                                        <div class="question-inner">
+                                        <div class="form-style form-style-3">
+                                            <div class="form-inputs clearfix question-options">
+                                                
+
+                                                <input type="radio" class="button" id="{{option}}-{{forloop.counter}}" name="question1">
+                                                <label for="{{option}}-{{forloop.counter}}" class="question-main">{{ forloop.counter }}.  &nbsp; &nbsp;{{option}}</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                  
+                                        
+                                    </div>
+                                    {% else %}
+                                    <div class="wrap">
+                                        <div class="question-inner">
+                                        <div class="form-style form-style-3">
+                                            <div class="form-inputs clearfix question-options">
+
+                                                <input type="radio" class="button" name="question1">
+                                                    <label class="question-main">{{ forloop.counter }}. &nbsp; &nbsp;{{option}}</label>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                                
+                                    </div>
+                                    {% endif %}
+                                       
+                                {% endfor %}
+                            </article>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        {% endfor %}
+        <ul class="pagination">
+            {% if questions.has_previous %}
+                <li>
+                    <a href="?page={{ questions.previous_page_number }}">
+                        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                    </a>
+                </li>
+            {% else %}
+                <li class="disabled"><span><i class="fa fa-chevron-left" aria-hidden="true"></i></span></li>
+            {% endif %}
+            {% if questions.number|add:'-4' > 1 %}
+                <li>
+                    <a href="?page={{ questions.number|add:'-5' }}">&hellip;</a>
+                </li>
+            {% endif %}
+            {% for i in questions.paginator.page_range %}
+                {% if questions.number == i %}
+                    <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+                {% elif i > questions.number|add:'-5' and i < questions.number|add:'5' %}
+                    <li>
+                        <a href="?page={{ i }}">{{ i }}</a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+            {% if questions.paginator.num_pages > questions.number|add:'4' %}
+                <li><a href="?page={{ questions.number|add:'5' }}">&hellip;</a></li>
+            {% endif %}
+            {% if questions.has_next %}
+                <li>
+                    <a href="?page={{ questions.next_page_number }}">
+                        <i class="fa fa-chevron-right" aria-hidden="true">
+                        </i>
+                    </a>
+                </li>
+            {% else %}
+                <li class="disabled">
+                    <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                </li>
+            {% endif %}
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+<section id="popularjobcategory">
+    <div class="content">
+        <div class="container jobsearchcontainer">
+            <div class="container maintitle">
+                <div class="col-xs-12">
+                    <p class="popularjobtext">Choose Main <span class="manin-color"> Category </span></p>
+                </div>
+            </div>
+            <div class="container mainjobsearchform">
+                <div class="row">
+                    {% for cat in cats %}
+                    <div class="col-md-3 jobcat">
+                        <div class="category-item">
+                            <a href="{{cat.to_url}}">
+                                <span class="icon">
+                                    <img src="{{cat.image.url}}" alt="">
+
+                                </span>
+                                <h4 class="title">
+                                    {{cat.categoryName}} </h4>
+
+                            </a>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
