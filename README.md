@@ -51,9 +51,6 @@ And then:
     
 ###Images
 
-<details>
-  <summary>The title of the image group</summary><details>
-  <img src="https://ibb.co/2FMGRq5" name="image-name">
-  <img src="https://ibb.co/DbLwrkm" name="image-name">
-  <img src="https://ibb.co/K6nmJWj" name="image-name">
-</details>
+![image-name](https://ibb.co/2FMGRq5)
+![image-name](https://ibb.co/K6nmJWj)
+![image-name](https://ibb.co/DbLwrkm)
