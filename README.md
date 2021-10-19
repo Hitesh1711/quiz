@@ -21,9 +21,13 @@ Under The GNU
 # Usage
 
 To use this quiz:
+
     land on page
+    
     select a category
+    
         start quiz:
+        
             questions appear in sequence if correct answer is selected then turns green ✌ if wrong then turns red 👿.
 
 Categories:
