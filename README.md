@@ -22,10 +22,9 @@ Under The GNU
 * land on page
 * select a category
 * start quiz:
-  * 10 questions appear in sequence
-  * answer each question in turn before timeout
-  * difficulty level increases as decrease of time per question?
-  * see your score on display/dashboard
+  * 5 Questions appear on once.
+  * answer each question.
+  * Click on answer if correct then green ✌️✌️if wrong then red😡😡.
 
 Categories:
 * Computer
