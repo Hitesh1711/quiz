@@ -1,7 +1,7 @@
 # Introduction
 
 Quiz game for web made in Django
-Written by Hitesh Batheva,Purvansh Parmar, Sandhya Tiwari
+Written by Hitesh Bhatewada,Purvansh Parmar, Sandhya Tiwari
 Under The GNU
 
 ### Main features
