@@ -14,15 +14,17 @@ Under The GNU
 
 * User registration and logging in as demo
 
-* Procfile for easy deployments
-
-* Separated requirements files
+* Requirements files for easy deployments
 
 * SQLite by default
 
 # Usage
 
 To use this quiz:
+    land on page
+    select a category
+        start quiz:
+            questions appear in sequence if correct answer is selected then turns green ✌ if wrong then turns red 👿.
 
 ### Existing virtualenv
 
