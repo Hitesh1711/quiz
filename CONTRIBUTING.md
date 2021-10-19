@@ -1,6 +1,6 @@
-# Contributing to Contact App
+# Contributing to Quiz
 First off, thanks for taking the time to contribute. 
-The following is a set of guidelines for contributing to Contact App and its packages, which are hosted in the (https://github.com/praveenrawal/contact-app) on GitHub. 
+The following is a set of guidelines for contributing to Quiz and its packages, which are hosted in the (https://github.com/purvansh/quiz.git) on GitHub. 
 These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
 
 ## CODE OF CONDUCT
@@ -37,7 +37,7 @@ This takes you to the `.md` file where you can make your changes and [create a p
 
 #### Make changes in the CODE
 
-The best way to contribute is to "clone" your fork of contact-app to your development area. That sounds like some jargon, but "forking" on GitHub means 
+The best way to contribute is to "clone" your fork of quiz to your development area. That sounds like some jargon, but "forking" on GitHub means 
 "making a copy of that repo to your account" and "cloning" means "copying that code to your environment so you can work on it".
 
 1. [Set up Git](https://help.github.com/en/articles/set-up-git) (Windows, Mac & Linux)
