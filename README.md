@@ -52,5 +52,5 @@ And then:
 ###Images
 
 ![image-name](https://i.ibb.co/qDgThBx/Screenshot-272.png)
-![image-name](https://i.ibb.co/mJpS34C/Screenshot-271.png)
+![image-name](https://i.ibb.co/TcyrstB/Screenshot-271.png)
 ![image-name](https://i.ibb.co/X4VFYp6/Screenshot-273.png)
