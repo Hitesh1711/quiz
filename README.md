@@ -1,6 +1,6 @@
 # Introduction
 
-Quiz game for web made in django
+Quiz game for web made in Django
 Written by Hitesh Batheva,Purvansh Parmar, Sandhya Tiwari
 Under The GNU
 
@@ -18,14 +18,14 @@ Under The GNU
 
 * SQLite by default
 
-# Usage
-
-To use this quiz:
-    land on page
-    select a category
-        start quiz:
-        
-            questions appear in sequence if correct answer is selected then turns green ✌ if wrong then turns red 👿.
+### User Journey
+* land on page
+* select a category
+* start quiz:
+  * 10 questions appear in sequence
+  * answer each question in turn before timeout
+  * difficulty level increases as decrease of time per question?
+  * see your score on display/dashboard
 
 Categories:
 * Computer
